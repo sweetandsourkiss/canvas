@@ -5,10 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Maker</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <canvas></canvas>
-    <script src="app.js"></script>
+    <input
+      id="line-width"
+      type="range"
+      min="1"
+      ,
+      max="15"
+      value="7.5"
+      step="0.1"
+    />
+    <input type="color" id="color" />
+    <div>
+      <div
+        class="color-option"
+        style="background-color: #f9ca24"
+        data-color="#f9ca24"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f0932b"
+        data-color="#f0932b"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #eb4d4b"
+        data-color="#eb4d4b"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #6ab04c"
+        data-color="#6ab04c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #7ed6df"
+        data-color="#7ed6df"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #be2edd"
+        data-color="#be2edd"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #4834d4"
+        data-color="#4834d4"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #130f40"
+        data-color="#130f40"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #535c68"
+        data-color="#535c68"
+      ></div>
+    </div>
+    <button id="mode-btn">Fill</button>
+    <button id="destroy-btn">Destroy</button>
+    <button id="eraser-btn">Erase</button>
+    <input type="file" accept="image/*" id="file" />
+    <input type="text" placeholder="Write and then double click" id="text" />
+    <button id="save">Save Image</button>
+    <script src="./js/app.js"></script>
   </body>
 </html>
