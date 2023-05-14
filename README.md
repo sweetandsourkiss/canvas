@@ -4,16 +4,16 @@ This is my painter.
 
 ## features
 
-- [ ] drawing
-- [ ] filling
-- [ ] color seleting
-- [ ] erasing
-- [ ] file pasting
-- [ ] text filling
-      -- [x] change size
-      -- [x] change font
-      -- [x] fill or stroke
+- [x] draw
+- [x] fill
+- [x] select colors
+- [x] erase
+- [x] paste files
+- [x] fill the text
+- [ ] change text size
+- [ ] change text font
+- [ ] text fill or stroke
 
-### visit my painter
+## visit my painter!
 
 - [Painter](https://sweetandsourkiss.github.io/canvas/)
