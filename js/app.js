@@ -55,10 +55,10 @@ function onColorClick(event) {
 function onModeClick() {
   if (isFilling) {
     isFilling = false;
-    modeBtn.innerText = "Fill";
+    modeBtn.innerText = "🧺 Fill";
   } else {
     isFilling = true;
-    modeBtn.innerText = "Draw";
+    modeBtn.innerText = "🍡 Draw";
   }
 }
 function onCanvasClick() {
@@ -67,8 +67,10 @@ function onCanvasClick() {
   }
 }
 function onDestroyBtn() {
-  ctx.fillStyle = "white";
-  ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  if (confirm("Are you serious??")) {
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  }
 }
 function onEraserClick() {
   ctx.strokeStyle = "white";
